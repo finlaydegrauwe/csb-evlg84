@@ -1,0 +1,156 @@
+body {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  margin: 0;
+  /* background-color: #d8e3ed; */
+  overflow-x: hidden;
+}
+
+html {
+  scroll-snap-type: y mandatory;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+h1 {
+  font-size: 80pt;
+  font-weight: 700;
+  margin: 0;
+  line-height: 94pt;
+  text-transform: uppercase;
+}
+
+h2 {
+  color: #000;
+  font-size: 24pt;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 14pt;
+  text-align: justify;
+}
+
+button {
+  display: inline;
+  background-color: #6bbe92;
+  border: solid 1px #000;
+  box-shadow: 5px;
+  margin: 1px;
+  text-align: center;
+  color: #fff;
+  font-weight: normal;
+  font-size: 30px;
+}
+
+button {
+  background: black;
+  border: 4px solid black;
+  border-radius: 10px;
+  color: #ffffff;
+  display: block;
+  font-size: 1em;
+  font-weight: bold;
+  margin: 2em auto 10px auto;
+  padding: 1em 2em;
+  position: relative;
+  text-transform: uppercase;
+  width: 20em;
+}
+button:hover {
+  background-color: rgb(40, 40, 40);
+  cursor: pointer;
+}
+
+input[type="text"] {
+  padding: 1em;
+  border: 2px solid #cccccc;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  font-size: 12pt;
+  width: 18em;
+}
+input[type="text"]:focus {
+  border-color: #333333;
+}
+
+textarea {
+  padding: 1em;
+  border: 2px solid #cccccc;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  font-size: 12pt;
+  width: 80%;
+}
+textarea:focus {
+  border-color: #333333;
+}
+
+.child {
+  scroll-snap-align: start;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+}
+
+.gridContainer {
+  display: grid;
+  width: 80vw;
+  grid-template-rows: auto auto auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 2em;
+}
+
+.table {
+  margin: 1px;
+}
+
+#title {
+  color: #fff;
+  z-index: 10;
+  position: absolute;
+  top: 100px;
+  right: 150px;
+  text-align: right;
+}
+
+#subtitle {
+  z-index: 10;
+  text-align: left;
+  font-size: 26pt;
+  max-width: 60%;
+  background-color: white;
+}
+
+#menu {
+  position: sticky;
+  top: 1px;
+}
+
+#menu ul {
+  list-style-type: none;
+  display: flex;
+  transform: rotate(90deg);
+  position: absolute;
+  right: -327px;
+  top: 380px;
+}
+
+li {
+  margin: 0 0.5em;
+}
+
+a {
+  color: #aaa;
+}
+
+li a {
+  text-decoration: none;
+}
+
+li a:hover {
+  color: black;
+}
